@@ -1,0 +1,69 @@
+<html>
+     <head>
+		<title>
+              Customer sign up form
+        </title>
+        <script src=" /Users/anandmuddinedi/Desktop/FrontEnd/js/sign-up.js"></script>
+     </head>
+     <body>
+          <img src ="/Users/anandmuddinedi/Desktop/FrontEnd/images/eficens-logo.png"  alt="Eficens logo" width="200" height="100" ><br> <br>
+          <a href ="/Users/anandmuddinedi/Desktop/FrontEnd/index.html"> Home  </a> 
+          <a href =" /Users/anandmuddinedi/Desktop/FrontEnd/html/login.html"> login </a>
+          <div id="successMessage"></div><br>
+          <div id="errors"></div><br>
+          <form id="signUpForm">
+          	<label for="fname">First name:</label><br>
+          	<input type="text" id="fname" name="fname"><br>
+          	
+          	<label for="lname">Last name:</label><br>
+          	<input type="text" id="lname" name="lname"><br>
+          	
+          	<label for="dob">date of birth:</label><br>
+          	<input type="date" id="dob" name="dob"><br>
+          	
+          	<label for ="email">email</label>
+          	<input type="text" id="email" name="email"><br>
+          	
+          	<label for="phone">phone number</label>
+          	<input type="text" id="phone" name="phone">
+          	
+          	<h3> Select Gender </h3>
+          	<input type="radio" id="female" name="gender" value="female">
+          	<label for="female">Female</label><br>
+          	<input type="radio" id="male" name="gender" value="Male">
+          	<label for="male">Male</label><br>
+          	          	
+     		<h3>Interested in buy </h3>
+     		<input type="checkbox" id="cloths" name="cloths" value="cloths">
+     		<label for="cloths">cloths</label><br>
+     		
+     		<input type="checkbox" id="electronics" name="electronics" value="electronics">
+     		<label for ="electronics">electronics</label><br>
+     		<input type="checkbox" id="books" name="books" value="books">
+     		<label for="books">books</label><br><br>
+     		
+     		<label for="country">choose your home country </label><br>  
+     		<select name="country" id="country">
+     			<option value="">Select Country</option>
+     			<option value="USA">USA</option>
+     			<option value="India">india</option>
+     			<option value="japan">japan</option>
+     			<option value="uk">uk</option>
+     		</select><br><br>
+     		
+     		<label for="password">Password:</label><br>
+     		<input type="password" id="password" name="password"><br>
+     		
+     				
+     		<label for="confirm password">confirm Password:</label><br>
+     		<input type="password" id="confirmpassword" name="confirmpassword"><br><br><br>
+     		
+     		<label for="shippingAddress">Shipping  Address: </label><br>
+     		<textarea id="shippingAddress" rows="5 " cols="30" name="shippingAddress"></textarea><br><br><br>
+     		
+     		<button type="button" onclick="validateForm();">Sign Up</button>
+     		<input type="button" onclick="confirmClearFields();" value="Clear All Fields">	
+     	 </form>
+     </body>
+</html>     
+     		   		     		         			
