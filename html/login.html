@@ -3,22 +3,42 @@
 		<title>
 			Customer Login Page
 		</title>
-		<script src="../js/login.js"></script>
+		<script src="/Users/anandmuddinedi/Desktop/FrontEnd/js/login.js"></script>
+		<link rel="stylesheet" href="../css/styles.css">
 	</head>
 	
 	<body>
-		<img src ="../images/eficens-logo.png" alt="Eficens logo" width="200" height="100"><br><br>
-		<a href="../index.html">Home</a><br><br>
-		<div id="errors"></div><br>
-		<form onsubmit="return validateLoginForm();" methoid="POST" action="product.html">	
-			<label for="email">Email Id:</label><br>
-			<input type="text" id="email" name="email"><br>
-			
-			<label for="password">Password:</label><br>
-			<input type="password" id="password" name="password"><br><br>
-			
-			<button type="submit">Login</button>
-			<input type="button" onclick="clearAllTheFields();" value="Clear All Fields">
+		<table align="center">
+			<tr>
+				<td>
+					<img src =" ../images/eficens-logo.png" alt="Eficens logo" width="200" height="100"><br><br>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<a href="../index.html">Home</a>
+				</td>
+			</tr>
+		</table>
+
+		<div align="center" id="SuccessMessage"></div><br>
+		<div align="center" id="errors"></div><br>
+		
+		<form onsubmit="return validateLoginForm();" method="POST" action="product.html">
+			<table align="center">
+				<tr>
+					<td><label for="email">Email Id:</label><br></td>
+					<td><input type="text" id="email" name="email"><br></td>
+				</tr>
+				<tr>
+					<td><label for="password">Password:</label><br></td>
+					<td><input type="password" id="password" name="password"><br></td>
+				</tr>
+				<tr>
+					<td><button type="submit">Login</button><br></td>
+					<td><input type="button" onclick="clearAllTheFields();" value="Clear All Fields"></td>
+				</tr>
+			</table>			
 		</form>
 	</body>
 </html>	
